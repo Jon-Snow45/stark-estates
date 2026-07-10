@@ -1,0 +1,203 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+.hero{
+    background-color: #cedaf2;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2{
+    font-size: 40px;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: gold;
+    color: black;
+    transform: scale(1.15);
+}
+
+#properties{
+    padding: 60px 40px;
+    text-align: center;
+    background-color: rgb(169, 230, 210);
+}
+
+#properties h2{
+    margin-bottom: 35px;
+}
+
+.property-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.property-card{
+    transition: 0.3s ease;
+    width: 300px;
+    background-color: rgb(244, 230, 214);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.property-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.property-card img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.property-card h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.property-card p{
+    margin-bottom: 20px;
+}
+
+#visit{
+    background-color: #cedaf2;
+    padding: 60px 20px;
+}
+ 
+#visit h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form{
+    max-width: 400px;
+    margin:auto;
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid gold;
+}
+
+label{
+    display:block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    width:100%;
+    padding:10px;
+    margin-top: 20px;
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: gold;
+    color: black;
+}
+
+#contact{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contact h2{
+    margin-bottom: 20px;
+}
+
+#contact p{
+    margin: 10px 0;
+}
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        margin-top: 15px;
+    }
+}
