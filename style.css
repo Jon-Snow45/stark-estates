@@ -200,4 +200,9 @@ footer{
     nav{
         margin-top: 15px;
     }
+
+    body{
+        background: red !important;
+    }
+
 }
